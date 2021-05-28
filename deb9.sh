@@ -333,7 +333,7 @@ email=xshin3373@gmail.com
 
 # Common Password
 
-git clone https://github.com/okkaykayyo/okkay
+git clone https://github.com/window22/redoxxovpn
 cd /root/okkay/common
 mv common /etc/pam.d/
 chmod +x /etc/pam.d/common-password
@@ -548,7 +548,7 @@ apt install webmin -y
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 /etc/init.d/webmin restart
 
-wget -o webmin "https://raw.githubusercontent.com/window22/main/menu/webmin.sh"
+wget -o webmin "https://raw.githubusercontent.com/okkaykayyo/okkay/main/menu/webmin.sh"
 
 # Install Stunnel
 
@@ -970,10 +970,10 @@ cat /var/lib/data-user-sstp
 country=MY
 state=Malaysia
 locality=Malaysia
-organization=www.okkaykayyo.net
-organizationalunit=www.okkaykayyo.net
-commonname=www.okkaykayyo.net
-email=okkaykayyo@gmail.com
+organization=PakyaDomain
+organizationalunit=PakyaDomain
+commonname=PakyaDomain
+email=PakyaDomain@gmail.com
 
 #install sstp
 apt install openssl iptables iptables-persistent -y
