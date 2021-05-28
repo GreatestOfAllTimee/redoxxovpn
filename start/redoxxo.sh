@@ -1,6 +1,6 @@
 clear
-echo -e "######################PakyaScriptPremium#######################" | lolcat
-echo -e "######################TelcoScriptPremium#######################" | lolcat
+echo "-----------=[ Redoxxo Malaysian Vps Script ]=-----------" | lolcat
+echo "-----------=[ Pakya Malay Telco Vpn Trick  ]=-----------" | lolcat
 echo -e "" 
 echo -e "[1] Usernew"
 echo -e "[2] Delete"
