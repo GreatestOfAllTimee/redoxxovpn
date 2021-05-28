@@ -3,3 +3,5 @@
 clear
 neofetch
 echo -e ""
+echo -e Mulakan Dengan Bismillah"
+echo -e ""
