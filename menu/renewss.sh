@@ -1,4 +1,4 @@
-#!/bin/bash
+oV#!/bin/bash
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/shadowsocks-libev/akun.conf")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		clear
@@ -37,4 +37,4 @@ echo " =========================="
 echo " Client Name : $user"
 echo " Expired On  : $exp4"
 echo " =========================="
-echo " By OkkayKayyo"
+echo " By RedoxxoVpn"
