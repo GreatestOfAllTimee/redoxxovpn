@@ -1,4 +1,4 @@
-#!/bin/bash
+o#!/bin/bash
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/vless.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		clear
@@ -38,5 +38,5 @@ echo " =========================="
 echo " Client Name : $user"
 echo " Expired On  : $exp4"
 echo " =========================="
-echo " By Horasss"
+echo " By RedoxxoVpn"
 
