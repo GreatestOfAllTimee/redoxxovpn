@@ -1,4 +1,4 @@
-#!/bin/bash
+xoV#!/bin/bash
 #Create Shadowsocks
 clear
 echo -e ""
@@ -109,7 +109,7 @@ clear
 	echo -e "==========================="
 	echo -e "Link OBFS HTTP : $linkss2"
 	echo -e "==========================="
-	echo -e "Script by OkkayKayyo"
+	echo -e "Script by RedoxxoVpn"
 
         else
 	echo -e ""
@@ -126,7 +126,7 @@ if [[ $Answer =~ ^([2])$ ]]
             if [[ $Cekss =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -146,7 +146,7 @@ if [[ $Answer =~ ^([3])$ ]]
             if [[ $Delss =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -166,7 +166,7 @@ if [[ $Answer =~ ^([4])$ ]]
             if [[ $Xp-ss =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -186,7 +186,7 @@ if [[ $Answer =~ ^([5])$ ]]
             if [[ $Renewss =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
