@@ -31,6 +31,6 @@ echo " $akun - $port"
 echo "$jum"; x=$(( "$x" + 1 ))
 echo "-------------------------------"
 done
-echo -e "By OkkayKayyo"
+echo -e "By RedoxxoVpn"
 
 
