@@ -29,6 +29,6 @@ Port          : 444
 Cert          : http://$IP:81/server.crt
 Expired On    : $exp
 ================================
-By OkkayKayyo
+By RedoxoVpn
 EOF
 
