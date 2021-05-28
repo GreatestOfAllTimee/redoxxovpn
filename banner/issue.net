@@ -1,0 +1,34 @@
+<br>
+<font color="blue"><b>================<br></b></font>
+<font color="red"><b>| Port OpenSSH |</b></font><br>
+<font color="blue"><b>----------------</b></font><br>
+<font color="red"><b>* 22<br>
+* 444</b></font><br><br>
+<font color="blue"><b>================</b></font><br>
+<font color="red"><b>| Port Dropbear |</b></font><br>
+<font color="blue"><b>----------------</b></font><br>
+<font color="red"><b>* 143<br>
+* 80<br>
+* 236</b></font><br><br>
+<font color="blue"><b>======================</b></font><br>
+<font color="red"><b>| Port Stunnel / SSL |</b></font><br>
+<font color="blue"><b>----------------------</b></font><br>
+<font color="red"><b>* 443<br>
+* 943</b></font><br><br>
+<font color="blue"><b>====================</b></font><br>
+<font color="red"><b>| Port OpenVPN TCP |</b></font><br>
+<font color="blue"><b>--------------------</b></font><br>
+<font color="red"><b>* 9994<br>
+* 1194</b></font><br><br>
+<font color="blue"><b>====================</b></font><br>
+<font color="red"><b>| Port OpenVPN UDP |</b></font><br>
+<font color="blue"><b>--------------------</b></font><br>
+<font color="red"><b>* 25000</b></font><br><br>
+<font color="blue"><b>====================</b></font><br>
+<font color="red"><b>| Port OpenVPN SSL |</b></font><br>
+<font color="blue"><b>--------------------</b></font><br>
+<font color="red"><b>* 9443<br>
+* 2905</b></font><br><br>
+<font color="blue"><b>================================================</b></font><br>
+<font color="red"><b>| Creator By RedoxxoVpn Telco Malaysia |</b></font><br>
+<font color="blue"><b>------------------------------------------------</b></font><br>
