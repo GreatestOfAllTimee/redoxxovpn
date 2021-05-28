@@ -1,5 +1,5 @@
-#!/bin/bash
-source /okkay/vpn/id.txt
+o#!/bin/bash
+source /redoxxo/vpn/id.txt
 if [[ "$IP" = "" ]]; then
 PUBLIC_IP=$(wget -qO- ipv4.icanhazip.com);
 else
@@ -39,11 +39,11 @@ cat <<EOF
 L2TP/IPSEC PSK VPN
 
 Server IP    : $PUBLIC_IP
-IPsec PSK    : okkaykayyo
+IPsec PSK    : redoxxo
 Username     : $VPN_USER
 Password     : $VPN_PASSWORD
 Expired ON   : $exp
 
-By Okkaykayyo
+By RedoxxoVpn
 =================================
 EOF
