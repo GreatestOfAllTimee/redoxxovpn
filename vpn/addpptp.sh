@@ -38,6 +38,6 @@ Username     : $VPN_USER
 Password     : $VPN_PASSWORD
 Expired On   : $exp
 
-By Okkaykayyo
+By Redoxxovpn
 =================================
 EOF
