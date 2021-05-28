@@ -37,5 +37,5 @@ echo " =========================="
 echo " Client Name : $user"
 echo " Expired On  : $exp4"
 echo " =========================="
-echo " By Horasss"
+echo " By RedoxxoVpn"
 
