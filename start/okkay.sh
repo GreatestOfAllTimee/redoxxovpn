@@ -33,7 +33,7 @@ if [[ $Answer =~ ^([1])$ ]]
             if [[ $Usernew =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -53,7 +53,7 @@ if [[ $Answer =~ ^([2])$ ]]
             if [[ $Delete =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -73,7 +73,7 @@ if [[ $Answer =~ ^([3])$ ]]
             if [[ $Trial =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -93,7 +93,7 @@ if [[ $Answer =~ ^([4])$ ]]
             if [[ $Check =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -113,7 +113,7 @@ if [[ $Answer =~ ^([5])$ ]]
             if [[ $Member =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -133,7 +133,7 @@ if [[ $Answer =~ ^([6])$ ]]
             if [[ $Live =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -153,7 +153,7 @@ if [[ $Answer =~ ^([7])$ ]]
             if [[ $Info =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -173,7 +173,7 @@ if [[ $Answer =~ ^([8])$ ]]
             if [[ $Restart =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -193,7 +193,7 @@ if [[ $Answer =~ ^([9])$ ]]
             if [[ $Reboot =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -213,7 +213,7 @@ if [[ $Answer =~ ^([10])$ ]]
             if [[ $Speedtest =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -233,7 +233,7 @@ if [[ $Answer =~ ^([11])$ ]]
             if [[ $Webmin =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
