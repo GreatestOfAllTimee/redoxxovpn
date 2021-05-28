@@ -1,23 +1,6 @@
 clear
-echo -e ""
-echo -e "   ___                               " | lolcat
-echo -e "  / _ \                              " | lolcat
-echo -e " / / \ \ _     _                     " | lolcat
-echo -e " | | | || |   | |                    " | lolcat
-echo -e " | | | || | __| | __  __ _  _   _    " | lolcat
-echo -e " | | | || |/ /| |/ / / _' || | | |   " | lolcat
-echo -e " \ \_/ /|   < |   < | (_| || |_| |   " | lolcat
-echo -e "  \___/ |_|\_\|_|\_\ \__,_| \__, |   " | lolcat
-echo -e "                             __/ |   " | lolcat
-echo -e "                            |___/    " | lolcat
-echo -e "  _   __                             " | lolcat
-echo -e " | | / /                             " | lolcat
-echo -e " | |/ /   __ _  _   _  _   _   ___   " | lolcat
-echo -e " |    \  / _' || | | || | | | / _ \  " | lolcat
-echo -e " | |\  \| (_| || |_| || |_| || (_) | " | lolcat
-echo -e " \_| \_/ \__,_| \__, | \__, | \___/  " | lolcat
-echo -e "                 __/ |  __/ |        " | lolcat
-echo -e "                |___/  |___/         " | lolcat
+echo -e "######################PakyaScriptPremium#######################" | lolcat
+echo -e "######################TelcoScriptPremium#######################" | lolcat
 echo -e "" 
 echo -e "[1] Usernew"
 echo -e "[2] Delete"
