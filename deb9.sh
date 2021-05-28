@@ -1,6 +1,48 @@
 #!/bin/bash
-#Install Ruby
-clear
+#VPS Script By   : Dope-Kid
+#Contact Me FB   : https://www.facebook.com/joash.singh.90
+
+# Check Root
+if [ "${EUID}" -ne 0 ]; then
+echo "You need to run this script as root"
+exit 1
+fi
+
+# Check System
+if [ "$(systemd-detect-virt)" == "openvz" ]; then
+echo "OpenVZ is not supported"
+exit 1
+fi
+
+# Colours
+red='\e[1;31m'
+green='\e[0;32m'
+NC='\e[0m'
+
+# Requirement
+apt update -y
+apt upgrade -y
+update-grub
+apt install -y bzip2 gzip coreutils curl
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1
+
+# Script Access 
+MYIP=$(wget -qO- icanhazip.com);
+echo -e "${green}CHECKING SCRIPT ACCESS${NC}"
+IZIN=$( curl https://raw.githubusercontent.com/dopekid30/AutoScriptDebian10/main/Resources/Users/ipvps | grep $MYIP )
+if [ $MYIP = $IZIN ]; then
+echo -e "${green}ACCESS GRANTED...${NC}"
+else
+echo -e "${green}ACCESS DENIED...${NC}"
+exit 1
+fi
+
+# Subdomain Settings
+mkdir /var/lib/premium-script;
+echo -e "${green}ENTER THE VPS SUBDOMAIN/HOSTNAME, IF NOT AVAILABLE, PLEASE CLICK ENTER${NC}"
+read -p "Hostname / Domain: " host
+echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
+echo "$host" >> /root/domain
 echo -e ""
 echo -e "========================="
 echo -e "| Installing Ruby . . . |"
