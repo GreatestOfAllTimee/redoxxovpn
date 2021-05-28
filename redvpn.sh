@@ -27,8 +27,8 @@ unzip master.zip
 cd lolcat-master/bin
 gem install lolcat
 echo -e ""
-echo -e "######################PakyaScriptPremium#######################" | lolcat
-echo -e "######################TelcoScriptPremium#######################" | lolcat
+echo "-----------=[ Redoxxo Malaysian Vps Script ]=-----------" | lolcat
+echo "-----------=[ Pakya Malay Telco Vpn Trick  ]=-----------" | lolcat
 echo -e ""
 
 # Confirm to Install Script
@@ -324,12 +324,12 @@ service openvpn restart
 # Detail Company Profile
 
 country=ID
-state=Indonesia
-locality=Bandung
-organization=xShinGroup
-organizationalunit=xShinPages
+state=Malaysia
+locality=Kuala_Lumpur
+organization=Redoxxovpn
+organizationalunit=RedVpn
 commonname=xShin
-email=xshin3373@gmail.com
+email=redoxxo@gmail.com
 
 # Common Password
 
@@ -473,7 +473,7 @@ cd
 # Sett Port OpenSSH
 
 sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config
-sed -i '/Port 22/a Port 444' /etc/ssh/sshd_config
+sed -i '/Port 22/a Port 843' /etc/ssh/sshd_config
 service ssh restart
 
 # Install Dropbear
@@ -512,7 +512,6 @@ http_access allow manager localhost
 http_access deny manager
 http_access allow localhost
 http_access deny all
-http_port 80
 http_port 8080
 http_port 3128
 coredump_dir /var/spool/squid3
@@ -561,8 +560,8 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [dropbear]
-accept = 443
-connect = 127.0.0.1:109
+accept = 943
+connect = 127.0.0.1:142
 
 [dropbear]
 accept = 2905
