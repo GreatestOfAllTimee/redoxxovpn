@@ -389,7 +389,7 @@ apt -y clean
 
 # set time GMT +7
 
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 
 # set locale
 
@@ -459,7 +459,7 @@ screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500
 
 cd
 rm -rf okkay
-git clone https://github.com/okkaykayyo/okkay
+git clone https://github.com/window22/redoxxovpn
 
 cd okkay/badvpn/
 mv badvpn-udpgw /usr/bin/
@@ -520,7 +520,7 @@ refresh_pattern ^ftp: 1440 20% 10080
 refresh_pattern ^gopher: 1440 0% 1440
 refresh_pattern -i (/cgi-bin/|\?) 0 0% 0
 refresh_pattern . 0 20% 4320
-visible_hostname abidz.ga
+visible_hostname cvpn.ovh
 " >/etc/squid/squid.conf
 
 service squid restart
@@ -548,7 +548,7 @@ apt install webmin -y
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 /etc/init.d/webmin restart
 
-wget -o webmin "https://raw.githubusercontent.com/okkaykayyo/okkay/main/menu/webmin.sh"
+wget -o webmin "https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/webmin.sh"
 
 # Install Stunnel
 
@@ -627,7 +627,7 @@ apt-get install -y libxml-parser-perl
 
 # Add Banner
 
-cd okkay/banner
+cd redoxxovpn/banner
 mv issue.net /etc/
 
 cd
@@ -637,7 +637,7 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dr
 
 #Install pptp/l2tp
 # Debian 9 & 10 64bit
-VPN_IPSEC_PSK='okkaykayyo'
+VPN_IPSEC_PSK='redoxxovpn'
 VPN_USER='marlo'
 VPN_PASSWORD='1'
 NET_IFACE=$(ip -o $NET_IFACE -4 route show to default | awk '{print $5}');
@@ -911,14 +911,14 @@ mkdir -p /run/pluto
 service fail2ban restart 2>/dev/null
 service ipsec restart 2>/dev/null
 service xl2tpd restart 2>/dev/null
-wget -O /usr/bin/addl2tp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/addl2tp.sh && chmod +x /usr/bin/addl2tp
-wget -O /usr/bin/dell2tp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/dell2tp.sh && chmod +x /usr/bin/dell2tp
-wget -O /usr/bin/xp-l2tp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/xp-l2tp.sh && chmod +x /usr/bin/xp-l2tp
-wget -O /usr/bin/addpptp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/addpptp.sh && chmod +x /usr/bin/addpptp
-wget -O /usr/bin/delpptp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/delpptp.sh && chmod +x /usr/bin/delpptp
-wget -O /usr/bin/xp-pptp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/xp-pptp.sh && chmod +x /usr/bin/xp-pptp
-wget -O /usr/bin/renewpptp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/renewpptp.sh && chmod +x /usr/bin/renewpptp
-wget -O /usr/bin/renewl2tp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
+wget -O /usr/bin/addl2tp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/addl2tp.sh && chmod +x /usr/bin/addl2tp
+wget -O /usr/bin/dell2tp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/dell2tp.sh && chmod +x /usr/bin/dell2tp
+wget -O /usr/bin/xp-l2tp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/xp-l2tp.sh && chmod +x /usr/bin/xp-l2tp
+wget -O /usr/bin/addpptp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/addpptp.sh && chmod +x /usr/bin/addpptp
+wget -O /usr/bin/delpptp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/delpptp.sh && chmod +x /usr/bin/delpptp
+wget -O /usr/bin/xp-pptp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/xp-pptp.sh && chmod +x /usr/bin/xp-pptp
+wget -O /usr/bin/renewpptp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/renewpptp.sh && chmod +x /usr/bin/renewpptp
+wget -O /usr/bin/renewl2tp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/renewl2tp.sh && chmod +x /usr/bin/renewl2tp
 cat > /okkay/vpn/id.txt
 cat > /okkay/vpn/id.txt
 rm -f /root/ipsec.sh
@@ -986,7 +986,7 @@ make
 cpack -G DEB
 dpkg -i accel-ppp.deb
 mv /etc/accel-ppp.conf.dist /etc/accel-ppp.conf
-wget -O /etc/accel-ppp.conf "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/accel.conf"
+wget -O /etc/accel-ppp.conf "https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/accel.conf"
 sed -i $MYIP2 /etc/accel-ppp.conf
 chmod +x /etc/accel-ppp.conf
 systemctl start accel-ppp
@@ -1009,11 +1009,11 @@ netfilter-persistent save
 netfilter-persistent reload
 
 #input perintah sstp
-wget -O /usr/bin/addsstp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/addsstp.sh && chmod +x /usr/bin/addsstp
-wget -O /usr/bin/delsstp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/delsstp.sh && chmod +x /usr/bin/delsstp
-wget -O /usr/bin/ceksstp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/ceksstp.sh && chmod +x /usr/bin/ceksstp
-wget -O /usr/bin/xp-sstp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/xp-sstp.sh && chmod +x /usr/bin/xp-sstp
-wget -O /usr/bin/renewsstp https://raw.githubusercontent.com/okkaykayyo/okkay/main/vpn/renewsstp.sh && chmod +x /usr/bin/renewsstp
+wget -O /usr/bin/addsstp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/addsstp.sh && chmod +x /usr/bin/addsstp
+wget -O /usr/bin/delsstp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/delsstp.sh && chmod +x /usr/bin/delsstp
+wget -O /usr/bin/ceksstp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/ceksstp.sh && chmod +x /usr/bin/ceksstp
+wget -O /usr/bin/xp-sstp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/xp-sstp.sh && chmod +x /usr/bin/xp-sstp
+wget -O /usr/bin/renewsstp https://raw.githubusercontent.com/window22/redoxxovpn/main/vpn/renewsstp.sh && chmod +x /usr/bin/renewsstp
 rm -f /root/sstp.sh
 echo "0 0 * * * root xp-sstp" >> /etc/crontab
 
@@ -1108,11 +1108,11 @@ ip6tables -I INPUT -m state --state NEW -m udp -p udp --dport 2443:3543 -j ACCEP
 iptables-save > /etc/iptables.up.rules
 ip6tables-save > /etc/ip6tables.up.rules
 cd /usr/bin
-wget -O addss "https://raw.githubusercontent.com/okkaykayyo/okkay/main/menu/addss.sh"
-wget -O cekss "https://raw.githubusercontent.com/okkaykayyo/okkay/main/menu/cekss.sh"
-wget -O delss "https://raw.githubusercontent.com/okkaykayyo/okkay/main/menu/delss.sh"
-wget -O xp-ss "https://raw.githubusercontent.com/okkaykayyo/okkay/main/menu/xp-ss.sh"
-wget -O renewss "https://raw.githubusercontent.com/okkaykayyo/okkay/main/menu/renewss.sh"
+wget -O addss "https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/addss.sh"
+wget -O cekss "https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/cekss.sh"
+wget -O delss "https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/delss.sh"
+wget -O xp-ss "https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/xp-ss.sh"
+wget -O renewss "https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/renewss.sh"
 chmod +x addss
 chmod +x cekss
 chmod +x delss
