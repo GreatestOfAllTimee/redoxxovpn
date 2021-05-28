@@ -268,11 +268,11 @@ main() {
 
 main
 cd /usr/bin
-wget -O addws "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/addws.sh"
-wget -O addvless "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/addvless.sh"
-wget -O addtr "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/addtr.sh"
-wget -O delws "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/delws.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/cert.sh"
+wget -O addws "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/addws.sh"
+wget -O addvless "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/addvless.sh"
+wget -O addtr "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/addtr.sh"
+wget -O delws "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/delws.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/cert.sh"
 chmod +x addws
 chmod +x addvless
 chmod +x addtr
