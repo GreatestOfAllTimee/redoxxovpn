@@ -1,4 +1,4 @@
-#!/bin/bash
+V#!/bin/bash
 #Create Shadowsocks
 clear
 echo -e ""
@@ -14,7 +14,7 @@ echo -e "[3] Delss"
 echo -e "[4] Renewss"
 echo -e "[5] Xp-ss"
 echo -e ""
-read -p "Mana yang ingin anda pilih : " Jawaban
+read -p "Mana yang ingin anda pilih : " Jawapan
 
 # Function Addss
 if [[ $Answer =~ ^([1])$ ]]
@@ -109,7 +109,7 @@ clear
 	echo -e "==========================="
 	echo -e "Link OBFS HTTP : $linkss2"
 	echo -e "==========================="
-	echo -e "Script by OkkayKayyo"
+	echo -e "Script by RedoxxoVpn"
 else
 	echo -e ""
 fi
@@ -123,7 +123,7 @@ if [[ $Answer =~ ^([3])$ ]]
                         echo -e "|    Cekss     |"
                         echo -e "----------------"
                         echo -e ""
-                        cekss "https://raw.githubusercontent.com/okkaykayyo/okkay/main/menu/cekss.sh"
+                        cekss "https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/cekss.sh"
                         echo -e ""
                 else
                         echo -e "" 
@@ -155,7 +155,7 @@ if [[ $Answer =~ ^([4])$ ]]
             if [[ $Xp-ss =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
@@ -175,7 +175,7 @@ if [[ $Answer =~ ^([5])$ ]]
             if [[ $Renewss =~ ^([0])$ ]]
                 then
                     clear
-                    kayyo
+                    redoxxo
                 else
                     echo -e ""
             fi
