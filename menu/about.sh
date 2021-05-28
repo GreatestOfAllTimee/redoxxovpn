@@ -11,7 +11,7 @@ echo -e "=================" | lolcat
 echo -e "|   Thanks To   |" | lolcat
 echo -e "-----------------" | lolcat
 echo -e "====================" | lolcat
-echo -e "| Donate to Author |" | lolcat
+echo -e "| Credit By Redoxxovpn |" | lolcat
 echo -e "--------------------" | lolcat
 echo -e "Contact   : t.me/anakjati567" | lolcat
 echo -e ""
