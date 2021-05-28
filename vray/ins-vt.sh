@@ -8,12 +8,12 @@ apt -y install chrony
 timedatectl set-ntp true
 systemctl enable chronyd && systemctl restart chronyd
 systemctl enable chrony && systemctl restart chrony
-timedatectl set-timezone Asia/Jakarta
+timedatectl set-timezone Asia/Kuala_Lumpur
 chronyc sourcestats -v
 chronyc tracking -v
 date
 # install v2ray
-wget https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/go.sh && chmod +x go.sh && ./go.sh
+wget https://raw.githubusercontent.com/window22/redoxxovpny/main/vray/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
@@ -30,7 +30,7 @@ cat> /etc/v2ray/config.json << END
   },
   "inbounds": [
     {
-      "port": 8443,
+      "port": 4443,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -53,7 +53,7 @@ cat> /etc/v2ray/config.json << END
           ]
         },
         "wsSettings": {
-          "path": "/okkaykayyo",
+          "path": "/redoxxovpn",
           "headers": {
             "Host": ""
           }
@@ -141,7 +141,7 @@ cat> /etc/v2ray/none.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/okkaykayyo",
+          "path": "/redoxxovpn",
           "headers": {
             "Host": ""
           }
@@ -238,7 +238,7 @@ cat> /etc/v2ray/vless.json << END
           ]
         },
         "wsSettings": {
-          "path": "/okkaykayyo",
+          "path": "/redoxxovpn",
           "headers": {
             "Host": ""
           }
@@ -325,7 +325,7 @@ cat> /etc/v2ray/vnone.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/okkaykayyo",
+          "path": "/redoxxovpn",
           "headers": {
             "Host": ""
           }
@@ -481,12 +481,12 @@ cat> /etc/v2ray/trojan.json <<END
 }
 END
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 4443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8880 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 4443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8880 -j ACCEPT
@@ -506,22 +506,22 @@ systemctl start v2ray@trojan.service
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O addws "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/addws.sh"
-wget -O addvless "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/addvless.sh"
-wget -O addtr "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/addtr.sh"
-wget -O delws "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/delws.sh"
-wget -O delvless "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/delvless.sh"
-wget -O deltr "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/deltr.sh"
-wget -O cekws "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/cekws.sh"
-wget -O cekvless "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/cekvless.sh"
-wget -O cektr "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/cektr.sh"
-wget -O renewws "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/renewws.sh"
-wget -O renewvless "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/renewvless.sh"
-wget -O renewtr "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/renewtr.sh"
-wget -O xp-ws "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/xp-ws.sh"
-wget -O xp-tr "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/xp-tr.sh"
-wget -O xp-vless "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/xp-vless.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/okkaykayyo/okkay/main/vray/cert.sh"
+wget -O addws "https://raw.githubusercontent.com/window22/redoxxovpny/main/vray/addws.sh"
+wget -O addvless "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/addvless.sh"
+wget -O addtr "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/addtr.sh"
+wget -O delws "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/delws.sh"
+wget -O delvless "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/delvless.sh"
+wget -O deltr "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/deltr.sh"
+wget -O cekws "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/cekws.sh"
+wget -O cekvless "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/cekvless.sh"
+wget -O cektr "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/cektr.sh"
+wget -O renewws "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/renewws.sh"
+wget -O renewvless "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/renewvless.sh"
+wget -O renewtr "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/renewtr.sh"
+wget -O xp-ws "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/xp-ws.sh"
+wget -O xp-tr "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/xp-tr.sh"
+wget -O xp-vless "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/xp-vless.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/window22/redoxxovpn/main/vray/cert.sh"
 chmod +x addws
 chmod +x addvless
 chmod +x addtr
