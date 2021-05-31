@@ -17,9 +17,6 @@ fi
 color1='\e[031;1m'
 color2='\e[34;1m'
 color3='\e[0m'
-echo "-----------=[ Redoxxo Malaysian Vps Script ]=-----------"
-echo "-----------=[ Pakya Malay Telco Vpn Trick  ]=-----------"
-echo ""
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
@@ -32,7 +29,8 @@ echo -e "\e[032;1mCPU Frequency:\e[0m $freq MHz"
 echo -e "\e[032;1mTotal Amount Of RAM:\e[0m $tram MB"
 echo -e "\e[032;1mTotal Amount Of Swap:\e[0m $swap MB"
 echo -e "\e[032;1mSystem Uptime:\e[0m $up"
-echo -e "-------------------------------------"
+echo "-----------=[ Redoxxo Malaysian Vps Script ]=-----------"
+echo "-----------=[ Grenade Malay Telco Vpn Trick  ]=-----------"
 echo ""
 echo -e "-----=[ SSH & OpenVPN Section ]=-----"
 echo -e "${color1}1${color3}.Create User Account (${color2}add-ssh${color3})"
