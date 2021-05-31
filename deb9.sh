@@ -1,6 +1,6 @@
 #!/bin/bash
-#VPS Script By   : Dope-Kid
-#Contact Me FB   : https://www.facebook.com/joash.singh.90
+#VPS Script By   : Darknet
+#Contact Me FB   : Lollipop
 
 # Check Root
 if [ "${EUID}" -ne 0 ]; then
@@ -29,7 +29,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 # Script Access 
 MYIP=$(wget -qO- icanhazip.com);
 echo -e "${green}CHECKING SCRIPT ACCESS${NC}"
-IZIN=$( curl https://raw.githubusercontent.com/dopekid30/AutoScriptDebian10/main/Resources/Users/ipvps | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/window22/redoxxovpn/main/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}ACCESS GRANTED...${NC}"
 else
