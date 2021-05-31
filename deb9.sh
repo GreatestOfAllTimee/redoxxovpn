@@ -1197,8 +1197,6 @@ cd
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
-wget https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/menu.sh chmod +x menu.sh && ./menu.sh
-
 cd redoxxovpn/menu
 
 # Copy File To /usr/bin
@@ -1248,10 +1246,15 @@ chmod +x /usr/bin/update
 chmod +x /usr/bin/contact
 chmod +x /usr/bin/webmin
 chmod +x /usr/bin/addss
-chmod +x /usr/bin/cekss
-chmod +x /usr/bin/delss
+chmod +x /usr/bin/cek-ss
+chmod +x /usr/bin/del-ss
 chmod +x /usr/bin/xp-ss
-chmod +x /usr/bin/renewss
+chmod +x /usr/bin/renew-ss
+
+# Install Script
+# download script
+cd /usr/local/bin
+https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/menu.sh && chmod +x menu.sh && ./menu.sh
 
 # finishing
 cd
