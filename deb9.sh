@@ -1163,6 +1163,7 @@ cd
 rm -f /root/ss.sh
 echo "0 0 * * * root xp-ss" >> /etc/crontab
 
+
 cd okkay/menu
 
 # Delete Ekstenstion File
@@ -1196,7 +1197,9 @@ cd
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
-cd okkay/menu
+wget https://raw.githubusercontent.com/window22/redoxxovpn/main/menu/menu.sh chmod +x menu.sh && ./menu.sh
+
+cd redoxxovpn/menu
 
 # Copy File To /usr/bin
 cp -R menu /usr/bin
@@ -1285,7 +1288,7 @@ echo 'echo -e ""' >> .profile
 echo 'echo -e "For reporting bug or issues chat me on Telegram : t.me//anakjati567" | lolcat' >> .profile
 echo 'echo -e ""' >> .profile
 
-rm -rf /root/okkay
+rm -rf /root/redoxxovpn
 rm /root/deb9.sh
 port
 success
